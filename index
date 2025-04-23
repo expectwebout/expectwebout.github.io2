@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>企业信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            font-size: 14px; /* 适配手机字体大小 */
+        }
+        .container {
+            background: white;
+            max-width: 66.66%; /* 占屏幕三分之二 */
+            margin: 20px auto; /* 居中 */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        .main-table td {
+            padding: 8px; /* 缩小内边距适配手机 */
+            border: 1px solid #000;
+            white-space: nowrap; /* 防止文字换行 */
+        }
+        .detail-btn {
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            color: #666;
+        }
+        .detail-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 主界面 -->
+    <div class="container">
+        <table class="main-table">
+            <tr>
+                <td colspan="4" style="text-align: center; font-size: 18px; padding: 12px;">企业信息</td>
+            </tr>
+            <tr>
+                <td>名称:</td>
+                <td>海口秀英豫北饭店</td>
+                <td>社会信用代码:</td>
+                <td>92460105MA5RX0FL87</td>
+            </tr>
+            <tr>
+                <td>法定代表人:</td>
+                <td>许井顺</td>
+                <td>许可证编号:</td>
+                <td>JY22201060154133</td>
+            </tr>
+            <tr>
+                <td>经营场所:</td>
+                <td colspan="3">海南省--海口市--秀英区--丘海--横路东方洋路口</td>
+            </tr>
+            <tr>
+                <td>发证机构:</td>
+                <td>海口市市场监督管理局秀英分局</td>
+                <td>签发人:</td>
+                <td>刘威</td>
+            </tr>
+            <tr>
+                <td>发证日期:</td>
+                <td>2024-05-14</td>
+                <td>有效期:</td>
+                <td>2027-10-09</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="detail-btn" onclick="showDetail()">[企业详细信息]</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 详细信息界面 -->
+    <div class="container detail-container" id="detailContainer">
+        <table class="main-table">
+            <tr>
+                <td>名称:</td>
+                <td colspan="3">海口秀英味王府餐馆</td>
+            </tr>
+            <tr>
+                <td>经营场所:</td>
+                <td colspan="3">海南省--海口市--秀英区--丘海--横路东方洋路口</td>
+            </tr>
+            <tr>
+                <td>住所:</td>
+                <td colspan="3">海南省--海口市--秀英区--丘海--横路东方洋路口</td>
+            </tr>
+            <tr>
+                <td>社会信用代码:</td>
+                <td>92460105MA5RYFDD6J</td>
+                <td>是否门店实体:</td>
+                <td>是</td>
+            </tr>
+            <tr>
+                <td>仓储地址:</td>
+                <td>------</td>
+                <td>仓储面积:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>申请副本数:</td>
+                <td></td>
+                <td>经济性质:</td>
+                <td>个体工商户</td>
+            </tr>
+            <tr>
+                <td>主体业态:</td>
+                <td>餐饮服务经营者</td>
+                <td>主体业态大类:</td>
+                <td>小型餐馆</td>
+            </tr>
+            <tr>
+                <td>其他主体业态大类:</td>
+                <td></td>
+                <td>是否含网络经营:</td>
+                <td>是</td>
+            </tr>
+            <tr>
+                <td>是否散装熟食销售:</td>
+                <td colspan="3">否</td>
+            </tr>
+            <tr>
+                <td>就餐面积(㎡):</td>
+                <td></td>
+                <td>食品处理区面积(㎡):</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>用餐配送单位:</td>
+                <td>否</td>
+                <td>中央厨房:</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td>经营项目:</td>
+                <td colspan="3"> 热食类食品制售（简单制售）</td>
+            </tr>
+            <tr>
+                <td>经营项目备注:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>有效期:</td>
+                <td>5年</td>
+                <td>职工人数(人):</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>应体检人数(人):</td>
+                <td></td>
+                <td>就餐座位数(个):</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>邮政编码:</td>
+                <td></td>
+                <td>E-mail:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>经营面积:</td>
+                <td></td>
+                <td>产权人:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>房屋使用方式:</td>
+                <td></td>
+                <td>房屋使用期限:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>受理机构:</td>
+                <td colspan="3">海口市市场监督管理局秀英分局</td>
+            </tr>
+            <tr>
+                <td>发证机构:</td>
+                <td colspan="3">海口市市场监督管理局秀英分局</td>
+            </tr>
+            <tr>
+                <td>日常监管机构:</td>
+                <td>正阳市场监督管理所</td>
+                <td>日常监管人员:</td>
+                <td>王頔，陈婷</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="detail-btn" onclick="hideDetail()">返回</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function showDetail() {
+            document.getElementById('detailContainer').style.display = 'block';
+            document.querySelector('.container:not(.detail-container)').style.display = 'none';
+        }
+        function hideDetail() {
+            document.getElementById('detailContainer').style.display = 'none';
+            document.querySelector('.container:not(.detail-container)').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
